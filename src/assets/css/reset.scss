@@ -1,0 +1,142 @@
+@import "./vars.scss";
+
+.window{
+  .title-bar{
+    min-height: 26px;
+  }
+}
+
+.title-bar,
+.window,
+button,
+input,
+label,
+option,
+select,
+textarea,
+ul.tree-view{
+  font-size: inherit;
+}
+
+.card{
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.08);
+  background-color: #FCF9F2;
+  border: 2px solid mix($c,#aaa, 50);
+
+  &.pink{
+    border-color: $c_pink;
+  }
+}
+
+.btn {
+
+  &.round{
+    border-radius: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  &.btn-primary {
+    background-color: $c !important;
+    border-color: $c !important;
+
+    &.pink{
+      background-color: $c_pink !important;
+      border-color: $c_pink !important;
+      &:hover,
+      &:focus{
+        background-color: $c_pink !important;
+      }
+    }
+
+    &.black {
+      background-color: #303030 !important;
+      border-color: #303030 !important;
+
+      &:hover,
+      &:focus {
+        background-color: #303030 !important;
+      }
+    }
+
+    &.gold{
+      $gold_c: #F8C531;
+      $gold_c2: #F3CB61;
+      background-color: $gold_c !important;
+      background-image: -webkit-linear-gradient(left, $gold_c, $gold_c2);
+      border: none !important;
+      border-top: 4px solid transparent !important;
+      border-bottom: 4px solid rgba(0,0,0,0.3) !important;
+      border-radius: 30px;
+      min-width: 100px;
+      color: #222 !important;
+      font-size: 14px;
+      font-weight: bold;
+
+      &:hover,
+      &:focus {
+        color: #222 !important;
+        opacity: 1 !important;
+        background-color: $gold_c !important;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $c !important;
+      box-shadow: none !important;
+      color: #fff !important;
+      opacity: 0.9;
+    }
+  }
+
+  &.btn-gray{
+    color: #fff !important;
+    background-color: #999 !important;
+    border-color: #999 !important;
+
+    &:hover,
+    &:focus {
+      background-color: #999 !important;
+      box-shadow: none !important;
+      color: #fff !important;
+    }
+  }
+
+  &.btn-outline-primary {
+    background-color: transparent !important;
+    border-color: $c !important;
+    color: $c !important;
+
+    &:hover,
+    &:focus {
+      background-color: transparent !important;
+      box-shadow: none !important;
+    }
+  }
+
+  &.btn-round {
+    border-radius: 30px !important;
+  }
+}
+
+.small{
+  font-size: 14px;
+}
+
+.table{
+  color: inherit;
+  td,th{
+    border-bottom: 1px solid #333;
+    border-top: none;
+  }
+}
+
+.input-group-text{
+  background: #fff;
+  &.bg-white {
+    background: #fff;
+  }
+}
