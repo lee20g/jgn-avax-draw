@@ -9,10 +9,10 @@ let json = {
       id: "injected",
       name: "MetaMask"
     },
-    binancechain: {
-      id: "binancechain",
-      name: "BinanceChain"
-    },
+    // binancechain: {
+    //   id: "binancechain",
+    //   name: "BinanceChain"
+    // },
     // fortmatic: {
     //   id: "fortmatic",
     //   name: "Fortmatic",
@@ -28,15 +28,15 @@ let json = {
     //     network: "mainnet"
     //   }
     // },
-    // walletconnect: {
-    //   id: "walletconnect",
-    //   name: "WalletConnect",
-    //   options: {
-    //     rpc: {
-    //       "1": "https://mainnet.infura.io/v3/8bc14765e58149ec928a5695cb8e1ea4"
-    //     }
-    //   }
-    // },
+    walletconnect: {
+      id: "walletconnect",
+      name: "WalletConnect",
+      options: {
+        rpc: {
+          "43114": "https://api.avax.network/ext/bc/C/rpc"
+        }
+      }
+    },
     // walletlink: {
     //   id: "walletlink",
     //   name: "Coinbase",
