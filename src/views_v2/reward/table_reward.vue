@@ -86,7 +86,7 @@ export default {
           },
           number: {
             en: '10',
-            zh: '',
+            zh: '需要对应的 10 张卡牌',
           },
           chance: {
             en: '1 in total',
@@ -104,7 +104,7 @@ export default {
           },
           number: {
             en: '3',
-            zh: '',
+            zh: '需要对应的 3 张卡牌',
           },
           chance: {
             en: '10 in total',
@@ -122,7 +122,7 @@ export default {
           },
           number: {
             en: '6',
-            zh: '',
+            zh: '需要对应的 6 张卡牌',
           },
           chance: {
             en: '100 in total',
@@ -140,7 +140,7 @@ export default {
           },
           number: {
             en: '1',
-            zh: '',
+            zh: '需要对应的 1 张卡牌',
           },
           chance: {
             en: '187 in total',
@@ -158,7 +158,7 @@ export default {
           },
           number: {
             en: '1',
-            zh: '',
+            zh: '需要对应的 1 张卡牌',
           },
           chance: {
             en: '500 in total',
@@ -176,7 +176,7 @@ export default {
           },
           number: {
             en: '1',
-            zh: '',
+            zh: '需要对应的 1 张卡牌',
           },
           chance: {
             en: '800 in total',

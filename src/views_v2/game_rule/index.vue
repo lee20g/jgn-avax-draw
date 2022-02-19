@@ -140,58 +140,59 @@
           <tableReward class="sp-rate-table style-row-gap small"/>
 
 
-          <div class="mt-4 small pb-5">
-            <h5 class="c mb-4">
+          <div class="mt-4 small pb-3">
+            <h5 class="b mb-4">
               {{lg('',{
                 en: 'There are FIVE TYPE of rewards:',
-                zh: '奖品一共是五个类别：',
+                zh: '奖品一共是五个类别:',
               })}}
               
             </h5>
             <p>
               {{lg('',{
-                en: '1) When you collected “Thugs.Fi”, you can get 15,000 Drugs. Note, you need 8 respective NFT cards.',
-                zh: '1) 当您集够了“Thugs.Fi”的全拼写，就可以换购15,000个Drugs。注意，一共需要8张NFT卡牌。',
+                en: '1) When you collect “JUGGERNAUT”, you can get 8,000 JGN. Note, you need 10 respective NFT cards, which should include 1 LETTER J, LETTER E, LETTER R, LETTER N, LETTER A, LETTER T and 2 LETTER G & 2 LETTER U.',
+                zh: '1) 当您集够了“JUGGERNAUT”的全拼写，就可以换购 8000个JGN。注意，一共需要10张NFT卡牌。',
               })}}
               
             </p>
             <p>
               {{lg('',{
-                en: '2) When you collected “Thugs”, you can get 1,500 Drugs. Note, you need 5 respective NFT cards.',
-                zh: '2) 当您集够了“Thugs “的全拼写，就可以换购1,500个Drugs。注意，一共需要5张NFT卡牌。',
+                en: '2) When you collect “JGN”, you can get 1,500 JGN. Note, you need 3 respective NFT cards, which should include 1 LETTER J, LETTER G & LETTER N.',
+                zh: '2) 当您集够了“JGN“的全拼写，就可以换购1500个JGN。注意，一共需要3张NFT卡牌，其中包括一张字母J，一张字母G 和一张字母N。',
               })}}
               
             </p>
             <p>
               {{lg('',{
-                en: '3) When you collected “Fi”, you can get 600 Drugs. Note, you need 2 respective NFT cards. ',
-                zh: '3) 当您集够了“Fi”的全拼写，就可以换购600个Drugs。注意，一共需要2张NFT卡牌。',
+                en: '3) When you collect “Jugger”, you can get 300 JGN. Note, you need 6 respective NFT cards, which should include 1 LETTER J, LETTER U, LETTER E, LETTER R and 2 LETTER G.',
+                zh: '3) 当您集够了“Jugger”的全拼写，就可以换购300个JGN。注意，一共需要6张NFT卡牌。',
               })}}
               
             </p>
             <p>
               {{lg('',{
-                en: '4) When you get 1 “instant card” NFT cards, you can get either 100 Drugs, or 30 Drugs, or 10 Drugs, depends on which instant card that you get. ',
-                zh: '4) 当您得到“Instant Win”的卡牌，就可以换购100个Drugs或者 30个Drugs 或者 10 个Drugs，你的卡牌上面会写是哪一种。',
+                en: '4) When you get 1 “instant win card” NFT card, you can get either 10 JGN, 30 JGN and 50 JGN depends on which card that you get. ',
+                zh: '4) 当您得到“Instant Win”的卡牌，就可以换购10个JGN 或者 30个JGN 或者 50个JGN，你的卡牌上面会写是哪一种。',
               })}}
               
             </p>
             <p>
               {{lg('',{
-                en: '5) When you get the NFT cards in limited edition, save them in your wallet and you can trade in our NFT exchange coming soon.',
-                zh: '5) 限量版NFT卡牌：一共6种类别，每种类别限量50张。可以收集或者未来在JGN交易市场进行交易。',
+                en: '5) When you get the NFT collection cards (JGN-AVAX GENESIS COLLECTION – Winter Wonderland), save them in your wallet and you can trade in our NFT exchange coming soon.',
+                zh: '5) 限量版AVAX 的JGN NFT卡牌：一共5种类别，每种类别限量140张。可以收集或者未来在JGN交易所进行交易。',
               })}}
             </p>
           </div>
 
+          <div>
+            {{lg('',{
+              en: 'JGN Foundation has the final say for the game rules.',
+              zh: 'JGN官方拥有最后解释权',
+            })}}
+          </div>
+
         </div>
 
-        <!-- <div class="tac">
-          {{lg('',{
-            en: 'JGN Foundation has all the final right of explanation of the game rules',
-            zh: 'JGN官方拥有最后解释权',
-          })}}
-        </div> -->
       </div>
     </div>
 

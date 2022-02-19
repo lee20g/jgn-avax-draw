@@ -18,31 +18,31 @@
           <p>
             {{lg('',{
               en: 'Welcome to JugerDRAW - the NFT lucky draw where you can win big JGN prizes!',
-              zh: '',
+              zh: '欢迎来到JuggerDraw - 在NFT的幸运抽奖活动中您可以赢取JGN的大奖!',
             })}}
           </p>
           <p>
             {{lg('',{
               en: 'Put together the words to win a prize. The first to spell Juggernaut wins BIG!',
-              zh: '',
+              zh: '将单词拼在一起，就能获得奖励。第一个拼出 Juggernaut 的人将赢得大奖!',
             })}}
           </p>
           <p>
             {{lg('',{
               en: `Only 10 JGN per play... and don't worry, we all win! `,
-              zh: '',
+              zh: '玩一次只需要10 JGN......所有用于抽奖的JGN都会用于奖品来分发，',
             })}}
             <br>
             {{lg('',{
               en: 'All JGN used (minus the rewards) in the draw will be burned forever!',
-              zh: '',
+              zh: '剩余的部分将被永久被销毁！',
             })}}
           </p>
 
           <div class="bg-white text-dark b mx-5 py-1">
             {{lg('',{
               en: 'You will need 10 JGN to open the Treasure Chest to get a RANDOM NFT',
-              zh: '',
+              zh: '使用 10 JGN 打开宝箱，获得随机 NFT',
             })}}
           </div>
         </div>
