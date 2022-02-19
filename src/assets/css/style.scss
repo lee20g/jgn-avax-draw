@@ -377,6 +377,13 @@ button{
       background-size: auto 50px;
       top: -27px;
     }
+
+    &.snow-c {
+      background-image: url('~@/assets/static/img/css_img/el_snow_left_c.png');
+      height: 60px;
+      background-size: auto 60px;
+      top: -37px;
+    }
   }
   .snow-right {
     width: 200px;
@@ -396,6 +403,52 @@ button{
       height: 60px;
       background-size: auto 60px;
       width: 400px;
+    }
+    &.snow-d {
+      background-image: url('~@/assets/static/img/css_img/el_snow_right_d.png');
+      height: 50px;
+      background-size: auto 50px;
+    }
+  }
+
+  .sp-title-box {
+
+    background-color: $c;
+    color: #333;
+    font-size: 22px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: -55px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 50px;
+    position: relative;
+
+    .title-snow-left{
+      position: absolute;
+      z-index: 1;
+      background-size: auto 40px;
+      background-repeat: no-repeat;
+      width: 50px;
+
+      background-image: url('~@/assets/static/img/css_img/el_title_snow_left_a.png');
+      height: 40px;
+      background-size: auto 40px;
+      top: -8px;
+      left:-8px;
+    }
+    .title-snow-right {
+      position: absolute;
+      z-index: 1;
+      background-size: auto 40px;
+      background-repeat: no-repeat;
+      width: 50px;
+
+      background-image: url('~@/assets/static/img/css_img/el_title_snow_right_a.png');
+      height: 40px;
+      background-size: auto 40px;
+      top: -8px;
+      right: -9px;
     }
   }
 }

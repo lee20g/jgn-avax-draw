@@ -3,117 +3,141 @@
   <div>
 
     <div class="container mx-auto">
-      <div class="pt-5">
 
-        <div class="small">
-          <h4 class="c mb-5 tac">
+      <!-- main logo -->
+      <div class="block-main-theme-logo">
+        <div class="pic-title">
+          <img src="~@/assets/static/img/css_img/theme-title-04-rule.png">
+        </div>
+      </div>
+
+      <div class="pt-5 mt-4">
+
+        <div class="ui-card-sp small">
+
+          <div class="el-snow snow-left snow-c"></div>
+          <!-- <div class="el-snow snow-right"></div> -->
+
+          <h4 class="sp-title-box tac">
+            <div class="title-snow-right"></div>
             {{lg('',{
               en: 'Game Rules',
               zh: '第一部分：卡牌总数、设置及费用',
             })}}:
           </h4>
-          <p>
-            {{lg('',{
-              en: '1. Total Number of NFT cards = 3,000.',
-              zh: '1、本系列NFT的总数目为3000张。',
-            })}}
-          </p>
-          <p>
-            {{lg('',{
-              en: '2. There are 17 different kind of NFTs, including 8 letter cards, 3 “instant win” cards and 6 NFT cards in limited edition.',
-              zh: '2、本系列一共有17种不同的卡牌 – 包括8种字母卡牌（Thugs.fi, 注意，“.”也是一张独立的卡牌），3种“instant win”卡牌 (“立即获奖”卡) 和 6种限量版的NFT卡牌。',
-            })}}
-          </p>
-          <p>
-            {{lg('',{
-              en: '3. In our smart contract, the order of the NFTs are randomly ranked. i.e., what you can get is designed by our smart contract and can NOT be manipulated/predicted by anyone.',
-              zh: '3、所有卡牌的顺序为任意规则排列，在智能合约里面提前设置好的，没有任何人可以修改或者调制。',
-            })}}
-          </p>
-          <p>
-            {{lg('',{
-              en: '4. When you connect with your wallet, and pay 5 JGN (BEP-20) per DRAW, you will get one NFT cards. You can DRAW multiple times. As this game is on BSC, the gas fee is significantly lower than ether network.',
-              zh: '4、每次链接钱包以后，需要支付5 JGN (BEP-20) 代币，就可以得到任意一张NFT卡牌。',
-            })}}
-            
-          </p>
-          <p>
-            {{lg('',{
-              en: '5. The probabilities of getting each of the NFT cards are the following:',
-              zh: '5、字母卡牌解释：本系列普通字母卡牌为LETTER T,H,U,G,I；稀有的字母卡牌为LETTER S, LETTER F 和 Dot(.)。得到的概率如下表展示：',
-            })}}
-          </p>
-          <p>
-            {{lg('',{
-              en: '6. "instant win card" card: When you get 1 “instant card” NFT cards, you can get either 100 Drugs, or 30 Drugs, or 10 Drugs, depends on which card that you get.',
-              zh: '6、立即获奖卡牌：只需要一张卡牌，就可以领到对应的奖品，分别有10个Drugs, 30个Drugs 和100个Drugs三种不同的卡牌。',
-            })}}
-          </p>
-          <p>
-            {{lg('',{
-              en: '7. There are 6 types of NFT cards in limited edition, with 50 available for each NFT cards. These cards can be saved in your wallet and will be available for trading in our coming JGN NFT exchange.',
-              zh: '7、限量版NFT卡牌：一共6种类型，每种类别限量50张。可以收集或者未来在JGN交易市场进行交易。',
-            })}}
-          </p>
+
+          <div class="row">
+            <div class="col col-md-8 my-3">
+              <p>
+                {{lg('',{
+                  en: '1. Total Number of NFT cards = 3,000.',
+                  zh: '1、本系列NFT的总数目为3000张。',
+                })}}
+              </p>
+              <p>
+                {{lg('',{
+                  en: '2. There are 17 different kind of NFTs, including 8 letter cards, 3 “instant win” cards and 6 NFT cards in limited edition.',
+                  zh: '2、本系列一共有17种不同的卡牌 – 包括8种字母卡牌（Thugs.fi, 注意，“.”也是一张独立的卡牌），3种“instant win”卡牌 (“立即获奖”卡) 和 6种限量版的NFT卡牌。',
+                })}}
+              </p>
+              <p>
+                {{lg('',{
+                  en: '3. In our smart contract, the order of the NFTs are randomly ranked. i.e., what you can get is designed by our smart contract and can NOT be manipulated/predicted by anyone.',
+                  zh: '3、所有卡牌的顺序为任意规则排列，在智能合约里面提前设置好的，没有任何人可以修改或者调制。',
+                })}}
+              </p>
+              <p>
+                {{lg('',{
+                  en: '4. When you connect with your wallet, and pay 5 JGN (BEP-20) per DRAW, you will get one NFT cards. You can DRAW multiple times. As this game is on BSC, the gas fee is significantly lower than ether network.',
+                  zh: '4、每次链接钱包以后，需要支付5 JGN (BEP-20) 代币，就可以得到任意一张NFT卡牌。',
+                })}}
+                
+              </p>
+              <p>
+                {{lg('',{
+                  en: '5. The probabilities of getting each of the NFT cards are the following:',
+                  zh: '5、字母卡牌解释：本系列普通字母卡牌为LETTER T,H,U,G,I；稀有的字母卡牌为LETTER S, LETTER F 和 Dot(.)。得到的概率如下表展示：',
+                })}}
+              </p>
+              <p>
+                {{lg('',{
+                  en: '6. "instant win card" card: When you get 1 “instant card” NFT cards, you can get either 100 Drugs, or 30 Drugs, or 10 Drugs, depends on which card that you get.',
+                  zh: '6、立即获奖卡牌：只需要一张卡牌，就可以领到对应的奖品，分别有10个Drugs, 30个Drugs 和100个Drugs三种不同的卡牌。',
+                })}}
+              </p>
+              <p>
+                {{lg('',{
+                  en: '7. There are 6 types of NFT cards in limited edition, with 50 available for each NFT cards. These cards can be saved in your wallet and will be available for trading in our coming JGN NFT exchange.',
+                  zh: '7、限量版NFT卡牌：一共6种类型，每种类别限量50张。可以收集或者未来在JGN交易市场进行交易。',
+                })}}
+              </p>
+            </div>
+            <div class="col col-md-4 my-3">
+              <table 
+                class="sp-rate-table style-row-gap small w-100 mx-auto mb-4"
+                style="max-width: 400px;"
+                >
+                <tr class="head-row" style="font-size: 12px;">
+                  <td>
+                    {{lg('',{
+                      en: 'NFT NAME',
+                      zh: '卡牌名字',
+                    })}}
+                  </td>
+                    
+                  <td>
+                    {{lg('',{
+                      en: 'Total Cards',
+                      zh: '数目',
+                    })}}
+                  </td>
+                    
+                  <td>
+                    {{lg('',{
+                      en: 'Probability',
+                      zh: '概率',
+                    })}}
+                  </td>
+                    
+                </tr>
+                <tr 
+                  v-for="(item,index) of list_card_rate"
+                  :key="index"
+                  >
+                  <td>{{item.name}}</td>
+                  <td>{{item.num | qfw}}</td>
+                  <td>{{item.rate | bfh}}</td>
+                </tr>
+                <tr class="foot-row c">
+                  <td>
+                    {{lg('',{
+                      en: 'Total',
+                      zh: '总计',
+                    })}}
+                  </td>
+                  <td>3,000</td>
+                  <td>100.00%</td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
-        
-        <table 
-          class="sp-rate-table style-row-gap small w-100 mx-auto my-5"
-          style="max-width: 400px;"
-          >
-          <tr class="head-row" style="font-size: 12px;">
-            <td>
-              {{lg('',{
-                en: 'NFT NAME',
-                zh: '卡牌名字',
-              })}}
-            </td>
-              
-            <td>
-              {{lg('',{
-                en: 'Total Cards',
-                zh: '数目',
-              })}}
-            </td>
-              
-            <td>
-              {{lg('',{
-                en: 'Probability',
-                zh: '概率',
-              })}}
-            </td>
-              
-          </tr>
-          <tr 
-            v-for="(item,index) of list_card_rate"
-            :key="index"
-            >
-            <td>{{item.name}}</td>
-            <td>{{item.num | qfw}}</td>
-            <td>{{item.rate | bfh}}</td>
-          </tr>
-          <tr class="foot-row c">
-            <td>
-              {{lg('',{
-                en: 'Total',
-                zh: '总计',
-              })}}
-            </td>
-            <td>3,000</td>
-            <td>100.00%</td>
-          </tr>
-        </table>
 
-        <div style="border-top: 2px dotted #333;"></div>
 
-        <div class="py-5">
+        <div class="ui-card-sp pb-5 mt-5">
 
-          <h4 class="c mb-4 tac">
+          <!-- <div class="el-snow snow-left"></div> -->
+          <div class="el-snow snow-right"></div>
+
+          <h4 class="sp-title-box tac">
+            <div class="title-snow-left"></div>
             {{lg('',{
               en: 'Part II: Rewards',
               zh: '第二部分：奖品',
             })}}:
           </h4>
+
+          <tableReward class="sp-rate-table style-row-gap small"/>
 
 
           <div class="mt-4 small pb-5">
@@ -160,16 +184,14 @@
             </p>
           </div>
 
-          <tableReward class="sp-rate-table style-row-gap small"/>
-
         </div>
 
-        <div class="tac">
+        <!-- <div class="tac">
           {{lg('',{
             en: 'JGN Foundation has all the final right of explanation of the game rules',
             zh: 'JGN官方拥有最后解释权',
           })}}
-        </div>
+        </div> -->
       </div>
     </div>
 
