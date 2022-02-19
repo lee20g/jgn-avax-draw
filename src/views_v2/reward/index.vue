@@ -7,7 +7,7 @@
       <!-- main logo -->
       <div class="block-main-theme-logo">
         <div class="pic-title">
-          <img src="~@/assets/static/img/css_img/bg_theme_logo_text-rewards.png">
+          <img src="~@/assets/static/img/css_img/theme-title-03-reward.png">
         </div>
       </div>
 

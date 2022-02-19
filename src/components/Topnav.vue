@@ -6,7 +6,7 @@
 
           <router-link to="/">
             <img 
-              src="~@/assets/static/img/css_img/main_logo_bsc.png" 
+              src="~@/assets/static/img/css_img/main_logo_avax.png" 
               class="mb-3" style_="height: 40px;"
               style="height: 45px;"
               >
@@ -14,7 +14,7 @@
 
           <!-- nav -->
           <div 
-            class="pc-ml-auto mb-3 main-nav usn flex-auto d-flex flex-items-center align-items-center flex-wrap"
+            class="pc-ml-auto mb-3 main-nav usn flex-auto d-flex flex-items-center align-items-center flex-wrap mr-4"
             style="font-size: 1.4em;"
             >
 
@@ -216,9 +216,9 @@ export default {
         a{
           font-size: 18px;
           color: #fff;
-          height: 24px;
-          line-height: 24px;
-          padding: 0 35px; 
+          height: 30px;
+          line-height: 30px;
+          padding: 0 30px; 
 
           &:hover{
             color: #fff !important;
