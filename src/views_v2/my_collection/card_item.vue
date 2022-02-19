@@ -20,7 +20,9 @@
         })}}
       </span>
       <br>
-      {{card_data.num_my}}
+      <span class="b" style="font-size: 24px;">
+        {{card_data.num_my}}
+      </span>
     </div>
   </div>
 

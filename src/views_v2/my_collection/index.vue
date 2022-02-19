@@ -11,8 +11,8 @@
       </div>
 
       <div class="ui-card-sp" style="min-height: 200px;">
-        <div class="el-snow snow-left"></div>
-        <div class="el-snow snow-right"></div>
+        <div class="el-snow snow-left snow-b"></div>
+        <div class="el-snow snow-right snow-b"></div>
 
 
         <div v-if="!$store.state.web3.account" class="tac">
@@ -22,7 +22,7 @@
           })}}
         </div>
 
-        <div v-else class="list-card">
+        <div v-else class="list-card pt-4">
           <div 
             v-for="(item,index) of my_list_card" 
             :key="index" 
@@ -36,7 +36,7 @@
       <div class="pt-3 mb-5 pb-4 tac">
         
         <button 
-          v-if="my_list_card && my_list_card.length && !status_approve_nft"
+          v-if=" my_list_card && my_list_card.length && !status_approve_nft"
           class="btn btn-primary gold px-5"
           @click="approveNft()"
           >
@@ -47,11 +47,14 @@
         </button>
 
         <button 
-          v-if="my_list_card && my_list_card.length && status_approve_nft"
+          v-if=" my_list_card && my_list_card.length && status_approve_nft"
           class="btn btn-primary gold px-5"
           @click="clickBtnClaim()"
           >
-          Claim Rewards
+          {{lg('',{
+            en: 'Claim Rewards',
+            zh: '',
+          })}}
         </button>
       </div>
 
@@ -102,7 +105,21 @@ export default {
 
       status_approve_nft: false,
 
-      my_list_card: [],
+      my_list_card: [
+        // demo data：
+        // {
+        //   item_post_pic: 'AVAXKing.jpeg',
+        //   num_my: 2,
+        // },
+        // {
+        //   item_post_pic: 'Goggles.jpeg',
+        //   num_my: 2,
+        // },
+        // {
+        //   item_post_pic: 'letter_G.jpeg',
+        //   num_my: 2,
+        // },
+      ],
 
       num_jgn_balance: '-',
       num_jgn_staked: '-',

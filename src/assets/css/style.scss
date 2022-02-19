@@ -360,20 +360,43 @@ button{
   .el-snow{
     position: absolute;
     z-index: 1;
+    background-size: auto 40px;
+    background-repeat: no-repeat;
   }
   .snow-left {
-    width: 30px;
-    height: 30px;
-    left: -20px;
-    top: -20px;
-    background-color: rgba(100, 100, 100, 0.5);
+    width: 200px;
+    height: 40px;
+    left: -15px;
+    top: -28px;
+    background-image: url('~@/assets/static/img/css_img/el_snow_left_a.png');
+    background-position: left center;
+
+    &.snow-b{
+      background-image: url('~@/assets/static/img/css_img/el_snow_left_b.png');
+      height: 50px;
+      background-size: auto 50px;
+      top: -27px;
+    }
   }
   .snow-right {
-    width: 30px;
-    height: 30px;
-    right: -20px;
-    top: -20px;
-    background-color: rgba(100, 100, 100, 0.5);
+    width: 200px;
+    height: 40px;
+    right: -15px;
+    top: -23px;
+    background-image: url('~@/assets/static/img/css_img/el_snow_right_a.png');
+    background-position: right center;
+
+    &.snow-b{
+      background-image: url('~@/assets/static/img/css_img/el_snow_right_b.png');
+      height: 50px;
+      background-size: auto 50px;
+    }
+    &.snow-c {
+      background-image: url('~@/assets/static/img/css_img/el_snow_right_c.png');
+      height: 50px;
+      background-size: auto 50px;
+      width: 300px;
+    }
   }
 }
 .ui-bg-card{

@@ -12,8 +12,8 @@
       </div>
 
       <div class="ui-card-sp pb-5">
-        <div class="el-snow snow-left"></div>
-        <div class="el-snow snow-right"></div>
+        <!-- <div class="el-snow snow-left"></div> -->
+        <div class="el-snow snow-right snow-c"></div>
 
         <tableReward/>
         
