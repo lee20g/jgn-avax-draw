@@ -1,6 +1,6 @@
 <template>
   <table class="table mx-auto mb-5" style="max-width: 750px;">
-    <tr class="head-row c">
+    <tr class="head-row c text-uppercase">
       <td>
         {{lg('',{
           en: 'Collections',
@@ -44,10 +44,12 @@
 
     <tr class="">
       <td>
-        {{lg('',{
-          en: 'JGN-AVAX GENESIS COLLECTION – Winter Wonderland',
-          zh: '',
-        })}}
+        <div style="max-width: 250px; font-size: 13px;">
+          {{lg('',{
+            en: 'JGN-AVAX GENESIS COLLECTION – Winter Wonderland',
+            zh: '',
+          })}}
+        </div>
       </td>
       <td colspan="2">
         {{lg('',{
@@ -55,7 +57,7 @@
           zh: '',
         })}}
       </td>
-      <td>
+      <td class="tar">
         {{lg('',{
           en: '700 in total',
           zh: '',
