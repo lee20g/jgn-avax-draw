@@ -3,56 +3,62 @@
     <tr class="head-row c">
       <td>
         {{lg('',{
-          en: 'Reward Title',
-          zh: '奖品名称',
+          en: 'Collections',
+          zh: '卡牌合集',
         })}}
       </td>
       <td>
         {{lg('',{
           en: 'Rewards',
-          zh: '奖品',
+          zh: '奖励',
         })}}
       </td>
       <td>
         {{lg('',{
-          en: 'Collections',
-          zh: '组合名称',
+          en: 'Number of NFTs',
+          zh: '卡片数目',
         })}}
       </td>
       <td class="tar">
         {{lg('',{
           en: 'Chances',
-          zh: '一共多少个奖品',
+          zh: '概率',
         })}}
       </td>
     </tr>
 
     <tr v-for="(item,index) of list_reward" :key="index">
       <td>
-        {{lg('',item.des_name)}}
+        {{lg('',item.name)}}
       </td>
       <td>
         {{lg('',item.reward)}}
       </td>
       <td>
-        {{lg('',item.name)}}
+        {{lg('',item.number)}}
       </td>
       <td class="tar">
         {{lg('',item.chance)}}
       </td>
     </tr>
 
-    <tr class="c">
+    <tr class="">
       <td>
         {{lg('',{
-          en: 'NFT Cards (limited edition)',
-          zh: '限量版NFT卡牌',
+          en: 'JGN-AVAX GENESIS COLLECTION – Winter Wonderland',
+          zh: '',
         })}}
       </td>
-      <td colspan="3">
+      <td colspan="2">
         {{lg('',{
-          en: 'There are 6 kinds of cards, each has 50 in total. THE NFT CARD CAN BE TRADED on jgnnft.com',
-          zh: '一共6种卡牌，每种卡牌50张。卡牌可以收集或者在JGNNFT.com交易',
+          en: 'The NFT card can be traded*',
+          zh: '',
+        })}}
+      </td>
+      <td>
+        {{lg('',{
+          en: '700 in total',
+          zh: '',
         })}}
       </td>
     </tr>
@@ -70,16 +76,16 @@ export default {
     return {
       list_reward: [
         {
-          des_name: {
-            en: 'First Prize',
-            zh: '一等奖',
+          name: {
+            en: 'JUGGERNAUT',
+            zh: '',
           },
           reward: {
-            en: '15,000 Drugs',
-            zh: '15,000个Drugs',
+            en: '8,000 JGN',
+            zh: '',
           },
-          name: {
-            en: 'Thugs.Fi',
+          number: {
+            en: '10',
             zh: '',
           },
           chance: {
@@ -88,16 +94,16 @@ export default {
           },
         },
         {
-          des_name: {
-            en: 'Second Prize',
-            zh: '二等奖',
+          name: {
+            en: 'JGN',
+            zh: '',
           },
           reward: {
-            en: '1,500 Drugs',
-            zh: '1,500个Drugs',
+            en: '1,500 JGN',
+            zh: '',
           },
-          name: {
-            en: 'Thugs',
+          number: {
+            en: '3',
             zh: '',
           },
           chance: {
@@ -106,52 +112,16 @@ export default {
           },
         },
         {
-          des_name: {
-            en: 'Third Prize',
-            zh: '三等奖',
+          name: {
+            en: 'JUGGER',
+            zh: '',
           },
           reward: {
-            en: '600 Drugs',
-            zh: '600个Drugs',
-          },
-          name: {
-            en: 'Fi',
+            en: '300 JGN',
             zh: '',
           },
-          chance: {
-            en: '30 in total',
-            zh: '',
-          },
-        },
-        {
-          des_name: {
-            en: 'Instant Win ',
-            zh: '马上兑换奖',
-          },
-          reward: {
-            en: '100 Drugs',
-            zh: '100个Drugs',
-          },
-          name: {
-            en: 'Instant Win – 100 Drugs',
-            zh: '',
-          },
-          chance: {
-            en: '50 in total',
-            zh: '',
-          },
-        },
-        {
-          des_name: {
-            en: 'Instant Win',
-            zh: '马上兑换奖',
-          },
-          reward: {
-            en: '30 Drugs',
-            zh: '30个Drugs',
-          },
-          name: {
-            en: 'Instant Win – 30 Drugs',
+          number: {
+            en: '6',
             zh: '',
           },
           chance: {
@@ -160,20 +130,56 @@ export default {
           },
         },
         {
-          des_name: {
-            en: 'Instant Win',
-            zh: '马上兑换奖',
+          name: {
+            en: 'Instant Win - 50 JGN',
+            zh: '',
           },
           reward: {
-            en: '10 Drugs',
-            zh: '10个Drugs',
+            en: '50 JGN',
+            zh: '',
           },
-          name: {
-            en: 'Instant Win – 10 Drugs',
+          number: {
+            en: '1',
             zh: '',
           },
           chance: {
-            en: '152 in total',
+            en: '187 in total',
+            zh: '',
+          },
+        },
+        {
+          name: {
+            en: 'Instant Win - 30 JGN',
+            zh: '',
+          },
+          reward: {
+            en: '30 JGN',
+            zh: '',
+          },
+          number: {
+            en: '1',
+            zh: '',
+          },
+          chance: {
+            en: '500 in total',
+            zh: '',
+          },
+        },
+        {
+          name: {
+            en: 'Instant Win - 10 JGN',
+            zh: '',
+          },
+          reward: {
+            en: '10 JGN',
+            zh: '',
+          },
+          number: {
+            en: '1',
+            zh: '',
+          },
+          chance: {
+            en: '800 in total',
             zh: '',
           },
         },

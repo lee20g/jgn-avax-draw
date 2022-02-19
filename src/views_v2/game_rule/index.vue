@@ -23,56 +23,56 @@
             {{lg('',{
               en: 'Game Rules',
               zh: '第一部分：卡牌总数、设置及费用',
-            })}}:
+            })}}
           </h4>
 
           <div class="row">
-            <div class="col col-md-8 my-3">
+            <div class="col col-md-7 my-3">
               <p>
                 {{lg('',{
-                  en: '1. Total Number of NFT cards = 3,000.',
-                  zh: '1、本系列NFT的总数目为3000张。',
+                  en: '1. Total Number of NFT cards = 10,000.',
+                  zh: '1、本系列NFT的总数目为10000张。',
                 })}}
               </p>
               <p>
                 {{lg('',{
-                  en: '2. There are 17 different kind of NFTs, including 8 letter cards, 3 “instant win” cards and 6 NFT cards in limited edition.',
-                  zh: '2、本系列一共有17种不同的卡牌 – 包括8种字母卡牌（Thugs.fi, 注意，“.”也是一张独立的卡牌），3种“instant win”卡牌 (“立即获奖”卡) 和 6种限量版的NFT卡牌。',
+                  en: '2. There are 16 different kind of NFTs, including 8 letter Cards, 3 “instant win” cards and 5 NFT collection cards, which can be traded in our coming NFT exchanges.',
+                  zh: '2、本系列一共有16种不同的卡牌 – 包括8种字母卡牌（”JUGGERNAUT”对应的字母，注意G &U是两个位置出现，但是同一个字母可以通用）、3种“instant win”卡牌 (“立即获奖”卡)和5张限量版的节日NFT卡牌。',
                 })}}
               </p>
               <p>
                 {{lg('',{
-                  en: '3. In our smart contract, the order of the NFTs are randomly ranked. i.e., what you can get is designed by our smart contract and can NOT be manipulated/predicted by anyone.',
+                  en: '3. The order of the NFTs in our smart contract are randomly ranked. i.e., what you can get is designed by our smart contract and can NOT be manipulated/predicted by anyone.',
                   zh: '3、所有卡牌的顺序为任意规则排列，在智能合约里面提前设置好的，没有任何人可以修改或者调制。',
                 })}}
               </p>
               <p>
                 {{lg('',{
-                  en: '4. When you connect with your wallet, and pay 5 JGN (BEP-20) per DRAW, you will get one NFT cards. You can DRAW multiple times. As this game is on BSC, the gas fee is significantly lower than ether network.',
-                  zh: '4、每次链接钱包以后，需要支付5 JGN (BEP-20) 代币，就可以得到任意一张NFT卡牌。',
+                  en: '4. When you connect with your wallet, and pay 10 JGN (AVAX) per DRAW, you will get one NFT cards. You can DRAW multiple times. As this game is on BSC, the gas fee is significantly lower than ether network. ',
+                  zh: '4、每次链接钱包以后，需要支付10个JGN（AVAX）代币，就可以得到任意一张NFT卡牌。',
                 })}}
                 
               </p>
               <p>
                 {{lg('',{
-                  en: '5. The probabilities of getting each of the NFT cards are the following:',
-                  zh: '5、字母卡牌解释：本系列普通字母卡牌为LETTER T,H,U,G,I；稀有的字母卡牌为LETTER S, LETTER F 和 Dot(.)。得到的概率如下表展示：',
+                  en: '5. There are 1 Letter T NFT cards available, 12 LETTER N, 101 LETTER R, 1100LETTER J, E & A, 2200 letter U and G.',
+                  zh: '5、字母卡牌解释：本系列一共有1张字母T，11张字母N，101张字母R, 1100张字母J,E,A；2200张字母U &字母G。得到的概率如下表展示。',
                 })}}
               </p>
               <p>
                 {{lg('',{
-                  en: '6. "instant win card" card: When you get 1 “instant card” NFT cards, you can get either 100 Drugs, or 30 Drugs, or 10 Drugs, depends on which card that you get.',
-                  zh: '6、立即获奖卡牌：只需要一张卡牌，就可以领到对应的奖品，分别有10个Drugs, 30个Drugs 和100个Drugs三种不同的卡牌。',
+                  en: '6. "instant win card" card: When you get 1 “instant card” NFT cards, you can get either 10 JGN, or 30 JGN, or 50 JGN, depends on which card that you get.',
+                  zh: '6、立即获奖卡牌：只需要一张卡牌，就可以领到对应的奖品，分别有10个JGN, 30个JGN 或者50个JGN三种不同的NFT卡牌。',
                 })}}
               </p>
               <p>
                 {{lg('',{
-                  en: '7. There are 6 types of NFT cards in limited edition, with 50 available for each NFT cards. These cards can be saved in your wallet and will be available for trading in our coming JGN NFT exchange.',
-                  zh: '7、限量版NFT卡牌：一共6种类型，每种类别限量50张。可以收集或者未来在JGN交易市场进行交易。',
+                  en: '7. There are 5 brand new and different “JGN-AVAX GENESIS COLLECTION – Winter Wonderland” – limited edition, with 140 available for each NFT cards. These cards can be saved in your wallet and will be available for trading in our coming JGN NFT exchange.',
+                  zh: '7、JGN-AVAX的创世NFT收藏版本：一共5种类别，每种类别限量100张。可以收集或者未来在JGN交易所进行交易。',
                 })}}
               </p>
             </div>
-            <div class="col col-md-4 my-3">
+            <div class="col col-md-5 my-3">
               <table 
                 class="sp-rate-table style-row-gap small w-100 mx-auto mb-4"
                 style="max-width: 400px;"
@@ -134,7 +134,7 @@
             {{lg('',{
               en: 'Part II: Rewards',
               zh: '第二部分：奖品',
-            })}}:
+            })}}
           </h4>
 
           <tableReward class="sp-rate-table style-row-gap small"/>
@@ -214,64 +214,69 @@ export default {
       list_card_rate: [
 
         {
-          name: 'Dot (.)',
-          num: '1',
-          rate: '0.03%',
-        },
-        {
-          name: 'S',
-          num: '11',
-          rate: '0.37%',
-        },
-        {
-          name: 'F ',
-          num: '31',
-          rate: '1.03%',
-        },
-        {
-          name: 'T',
-          num: '471',
-          rate: '15.70%',
-        },
-        {
-          name: 'H',
-          num: '471',
-          rate: '15.70%',
+          name: 'J',
+          num: '1,100',
+          rate: '11.00%',
         },
         {
           name: 'U',
-          num: '471',
-          rate: '15.70%',
+          num: '2,200',
+          rate: '22.00%',
         },
         {
           name: 'G',
-          num: '471',
-          rate: '15.70%',
+          num: '2,200',
+          rate: '22.00%',
         },
         {
-          name: 'I',
-          num: '471',
-          rate: '15.70%',
+          name: 'E',
+          num: '1,100',
+          rate: '11.00%',
         },
         {
-          name: 'Instant Win - 100 Drugs',
-          num: '50',
-          rate: '1.67%',
+          name: 'R',
+          num: '101',
+          rate: '1.01%',
         },
         {
-          name: 'Instant Win - 30 Drugs',
-          num: '100',
-          rate: '3.33%',
+          name: 'N',
+          num: '11',
+          rate: '0.11%',
         },
         {
-          name: 'Instant Win - 10 Drugs',
-          num: '152',
-          rate: '5.07%',
+          name: 'A',
+          num: '1,100',
+          rate: '11.00%',
         },
         {
-          name: 'NFT cards （6 KINDS）',
-          num: '300',
-          rate: '10.00%',
+          name: 'T',
+          num: '1',
+          rate: '0.01%',
+        },
+        {
+          name: 'Instant Win - 50 JGN',
+          num: '187',
+          rate: '1.87%',
+        },
+        {
+          name: 'Instant Win - 30 JGN',
+          num: '500',
+          rate: '5.00%',
+        },
+        {
+          name: 'Instant Win - 10 JGN',
+          num: '800',
+          rate: '8.00%',
+        },
+        {
+          name: 'GN-AVAX GENESIS COLLECTION – Winter Wonderland',
+          num: '700',
+          rate: '7.00%',
+        },
+        {
+          name: '',
+          num: '10,00',
+          rate: '100.00%',
         },
       ],
 
