@@ -41,7 +41,7 @@
 
           <div class="bg-white text-dark b mx-5 py-1">
             {{lg('',{
-              en: 'You will ned 10 JGN to open the Treasure Chest to get a RANDOM NFT',
+              en: 'You will need 10 JGN to open the Treasure Chest to get a RANDOM NFT',
               zh: '',
             })}}
           </div>

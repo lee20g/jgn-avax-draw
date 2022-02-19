@@ -15,9 +15,9 @@
       <!-- {{lg('',card_data.item_title)}} -->
       <span class="c">
         {{lg('',{
-          en: 'Number of Cards',
+          en: 'NUMBER OF CARDS',
           zh: '我拥有',
-        })}}:
+        })}}
       </span>
       <br>
       {{card_data.num_my}}
