@@ -55,8 +55,14 @@ let cfg = {
     url_network_address_view: "https://testnet.bscscan.com/",
     url_transaction_view: "https://testnet.bscscan.com/tx/",
     chain_id: 97
+  },
+  avax: {
+    default_lang: local_lang, // en zh id
+    url_network_address_view: "https://api.avax.network/ext/bc/C/rpc",
+    url_transaction_view: "https://snowtrace.io/tx/",
+    chain_id: 43114
   }
 };
 
 // 输出
-export default cfg.bsc
+export default cfg.avax

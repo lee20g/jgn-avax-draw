@@ -9,7 +9,7 @@ let arr = [
       en: "Rare, Total 1, 0.01%",
       zh: ""
     },
-    item_post_pic: "letter_T.jpg"
+    item_post_pic: "letter_T.jpeg"
   },
 
   {
@@ -22,7 +22,7 @@ let arr = [
       en: "Rare, Total 12, 0.12%",
       zh: ""
     },
-    item_post_pic: "letter_N.jpg"
+    item_post_pic: "letter_N.jpeg"
   },
 
   {
@@ -35,7 +35,7 @@ let arr = [
       en: "Rare, Total 101, 1.01%",
       zh: ""
     },
-    item_post_pic: "letter_R.jpg"
+    item_post_pic: "letter_R.jpeg"
   },
 
   {
@@ -48,7 +48,7 @@ let arr = [
       en: "Normal, Total 1398, 13.98%",
       zh: ""
     },
-    item_post_pic: "letter_J.jpg"
+    item_post_pic: "letter_J.jpeg"
   },
 
   {
@@ -61,7 +61,7 @@ let arr = [
       en: "Normal, Total 2796, 27.96%",
       zh: ""
     },
-    item_post_pic: "letter_U.jpg"
+    item_post_pic: "letter_U.jpeg"
   },
 
   {
@@ -74,7 +74,7 @@ let arr = [
       en: "Normal, Total 2796, 27.96%",
       zh: ""
     },
-    item_post_pic: "letter_G.jpg"
+    item_post_pic: "letter_G.jpeg"
   },
 
   {
@@ -87,7 +87,7 @@ let arr = [
       en: "Normal, Total 1398, 13.98%",
       zh: ""
     },
-    item_post_pic: "letter_E.jpg"
+    item_post_pic: "letter_E.jpeg"
   },
 
   {
@@ -100,7 +100,7 @@ let arr = [
       en: "Normal, Total 1398, 13.98%",
       zh: ""
     },
-    item_post_pic: "letter_A.jpg"
+    item_post_pic: "letter_A.jpeg"
   },
 
   {
@@ -113,7 +113,7 @@ let arr = [
       en: "Normal, Total 100, 1.00%",
       zh: ""
     },
-    item_post_pic: "instant_win_1.jpg"
+    item_post_pic: "instant_10.jpeg"
   },
   
   {
@@ -126,7 +126,7 @@ let arr = [
       en: "Normal, Total 100, 1.00%",
       zh: ""
     },
-    item_post_pic: "instant_win_2.jpg"
+    item_post_pic: "instant_30.jpeg"
   },
 
   {
@@ -139,101 +139,73 @@ let arr = [
       en: "Normal, Total 100, 1.00%",
       zh: ""
     },
-    item_post_pic: "instant_win_3.jpg"
+    item_post_pic: "instant_50.jpeg"
   },
 
   {
     card_id: "12",
     item_title: {
-      en: "Juggy Globe",
+      en: "AVAX King",
       zh: ""
     },
     item_des: {
       en: "Normal, Total 100, 1.00%",
       zh: ""
     },
-    item_post_pic: "Juggy_Globe.jpg"
+    item_post_pic: "AVAXKing.jpeg"
   },
 
   {
     card_id: "13",
     item_title: {
-      en: "Juggy Claus",
+      en: "Goggles",
       zh: ""
     },
     item_des: {
       en: "Normal, Total 100, 1.00%",
       zh: ""
     },
-    item_post_pic: "Juggy_Claus.jpg"
+    item_post_pic: "Goggles.jpeg"
   },
 
   {
     card_id: "14",
     item_title: {
-      en: "Juggy Santa",
+      en: "Snowboard Dap",
       zh: ""
     },
     item_des: {
       en: "Normal, Total 100, 1.00%",
       zh: ""
     },
-    item_post_pic: "Juggy_Santa.jpg"
+    item_post_pic: "SnowboardDap.jpeg"
   },
 
   {
     card_id: "15",
     item_title: {
-      en: "Juggy BUIDLer",
+      en: "Snow Globe",
       zh: ""
     },
     item_des: {
       en: "Normal, Total 100, 1.00%",
       zh: ""
     },
-    item_post_pic: "Juggy_BUIDLer.jpg"
+    item_post_pic: "SnowGlobe.jpeg"
   },
 
   {
     card_id: "16",
     item_title: {
-      en: "Santa 2020",
+      en: "SnowMan",
       zh: ""
     },
     item_des: {
       en: "Normal, Total 100, 1.00%",
       zh: ""
     },
-    item_post_pic: "Santa_2020.jpg"
+    item_post_pic: "SnowMan.jpeg"
   },
-
-  {
-    card_id: "17",
-    item_title: {
-      en: "CZ Santa Claus",
-      zh: ""
-    },
-    item_des: {
-      en: "Normal, Total 100, 1.00%",
-      zh: ""
-    },
-    item_post_pic: "CZ_Santa_Claus.jpg"
-  },
-
-  {
-    card_id: "18",
-    item_title: {
-      en: "CZ New Year",
-      zh: ""
-    },
-    item_des: {
-      en: "Normal, Total 100, 1.00%",
-      zh: ""
-    },
-    item_post_pic: "CZ_New_Year.jpg"
-  },
-
-
 
 ];
 
