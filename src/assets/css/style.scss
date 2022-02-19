@@ -334,13 +334,13 @@ button{
 
 // --ui--
 .ui-sp-snow-bg{
-  margin-top: 100px;
   height: 350px;
   background: url('~@/assets/static/img/css_img/bg_bottom_snow.png') center bottom;
   background-size: cover;
   background-repeat: no-repeat;
 
   &.cover-obj{
+    margin-top: 100px;
     &::after{
       content: ' ';
       display: block;
