@@ -5,7 +5,7 @@
 
 :root {
   --primary-color: #384aff;
-  --bg-color: #18172A;
+  --bg-color: #000;
   --text-color: #eee;
   --link-color: $c;
   --heading-color: #222223;
@@ -55,19 +55,20 @@ body{
 }
 html{
   background: $bg_linear;
-  background-image: radial-gradient(#2B201A 0%, var(--bg-color) 70%);
+  background-image: radial-gradient(#1d2b3a 0%, var(--bg-color) 70%);
 }
 body{
   box-sizing: border-box;
   min-height: 100vh;
-  background: url('~@/assets/static/img/css_img/bg_body_bluepic.png') center 100% no-repeat;
-  background-size: 1200px;
+  background: url('~@/assets/static/img/css_img/bg_body_snowpic_top.png') center top no-repeat,
+    url('~@/assets/static/img/css_img/bg_body_snowpic_bottom.png') center bottom no-repeat;
+  background-size: 100%;
 
-  &::after{
-    content: ' ';
-    display: block;
-    height: 80px;
-  }
+  // &::after{
+  //   content: ' ';
+  //   display: block;
+  //   height: 80px;
+  // }
 }
 
 * {
@@ -332,6 +333,49 @@ button{
 }
 
 // --ui--
+.ui-sp-snow-bg{
+  margin-top: 100px;
+  height: 350px;
+  background: url('~@/assets/static/img/css_img/bg_bottom_snow.png') center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &.cover-obj{
+    &::after{
+      content: ' ';
+      display: block;
+      height: 100%;
+      background: url('~@/assets/static/img/css_img/bg_bottom_obj.png') center bottom;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
+.ui-card-sp{
+  border: 4px solid $c;
+  padding: 30px;
+  position: relative;
+  background-color: rgba(0,0,0,0.5);
+
+  .el-snow{
+    position: absolute;
+    z-index: 1;
+  }
+  .snow-left {
+    width: 30px;
+    height: 30px;
+    left: -20px;
+    top: -20px;
+    background-color: rgba(100, 100, 100, 0.5);
+  }
+  .snow-right {
+    width: 30px;
+    height: 30px;
+    right: -20px;
+    top: -20px;
+    background-color: rgba(100, 100, 100, 0.5);
+  }
+}
 .ui-bg-card{
 
   &.lg{
@@ -386,10 +430,18 @@ button{
     background-color: transparent;
     border: 1px solid $c;
     color: $c !important;
-
     &:hover{
       color: $c !important;
     }
+
+    &.btn-white {
+      border: 1px solid #fff !important;
+      color: #fff !important;
+      &:hover{
+        color: #fff !important;
+      }
+    }
+
   }
 
   &:active{
@@ -420,8 +472,8 @@ button{
 
 // block--
 .block-main-theme-logo{
-  height: 200px;
-  background: url('~@/assets/static/img/css_img/bg_theme_logo_b.png') center center no-repeat;
+  height: 250px;
+  background: url('~@/assets/static/img/css_img/bg_theme_logo_c.png') center center no-repeat;
   background-size: contain;
   margin: 20px 0;
   position: relative;
@@ -459,9 +511,9 @@ button{
     margin-left: auto;
     margin-left: right;
     img{
-      margin-left: 15px;
-      max-width: 100%;
-      height: 40px;
+      margin-left: 5px;
+      max-width: 260px;
+      // height: 40px;
     }
   }
 }

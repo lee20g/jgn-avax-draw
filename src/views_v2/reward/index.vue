@@ -1,18 +1,27 @@
 <template>
-  <div class="container mx-auto">
-    
-    <!-- main logo -->
-    <div class="block-main-theme-logo">
-      <div class="pic-title">
-        <img src="~@/assets/static/img/css_img/bg_theme_logo_text-rewards.png">
+
+  <div>
+
+    <div class="container mx-auto">
+      
+      <!-- main logo -->
+      <div class="block-main-theme-logo">
+        <div class="pic-title">
+          <img src="~@/assets/static/img/css_img/bg_theme_logo_text-rewards.png">
+        </div>
+      </div>
+
+      <div class="ui-card-sp pb-5">
+        <div class="el-snow snow-left"></div>
+        <div class="el-snow snow-right"></div>
+
+        <tableReward/>
+        
       </div>
     </div>
 
-    <div class="pb-5">
-
-      <tableReward/>
-      
-    </div>
+    <!-- bottom bg -->
+    <div class="ui-sp-snow-bg cover-obj_xx"></div>
   </div>
 </template>
 

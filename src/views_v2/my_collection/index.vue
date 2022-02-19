@@ -1,73 +1,85 @@
 <template>
-  <div class="container-lg mx-auto">
 
-    <!-- main logo -->
-    <div class="block-main-theme-logo">
-      <div class="pic-title">
-        <img src="~@/assets/static/img/css_img/bg_theme_logo_text-collection.png">
-      </div>
-    </div>
+  <div>
+    <div class="container-lg mx-auto">
 
-    <div v-if="!$store.state.web3.account" class="tac">
-      {{lg('',{
-        en: 'Please Connect Wallet.',
-        zh: '请链接钱包',
-      })}}
-    </div>
-
-    <div v-else class="list-card">
-      <div 
-        v-for="(item,index) of my_list_card" 
-        :key="index" 
-        class="item-nft tac border"
-        >
-        <cardItem :data="item" @transferItem="showTransferPoppad(item)"/>
-      </div>
-    </div>
-
-    <div class="pt-3 mb-5 pb-4 tac">
-      
-      <button 
-        v-if="my_list_card && my_list_card.length && !status_approve_nft"
-        class="btn btn-primary gold px-5"
-        @click="approveNft()"
-        >
-        {{lg('',{
-          en: 'Approve',
-          zh: '',
-        })}}
-      </button>
-
-      <button 
-        v-if="my_list_card && my_list_card.length && status_approve_nft"
-        class="btn btn-primary gold px-5"
-        @click="clickBtnClaim()"
-        >
-        Claim Rewards
-      </button>
-    </div>
-
-    <UiModal :open="status_pad_transfer" @close="status_pad_transfer = false">
-      <div v-if="item_on_transfer && item_on_transfer.card_id" class="px-5 pb-5">
-        <h3 class="pt-4">Transfer</h3>
-        <div class="tac pt-4" style="height: 200px;">
-          <img :src="require(`../../assets/pic/card/${item_on_transfer.item_post_pic}`)" style="width: 100px;">
-        </div>
-        <div class="mb-3">
-          <label>Amount</label>
-          <input v-model="input_transfer_amount" type="number" step="1" min="1" :max="item_on_transfer.num_my" class="form-control" placeholder="Amount">
-        </div>
-        <div class="mb-3">
-          <label>To Address</label>
-          <input v-model="input_transfer_address" type="text" class="form-control" placeholder="To Address">
-        </div>
-        <div class="mt-5 tac">
-          <button @click="submitTransfer()" class="btn btn-primary gold" style="min-width: 150px;">
-            Transfer
-          </button>
+      <!-- main logo -->
+      <div class="block-main-theme-logo">
+        <div class="pic-title">
+          <img src="~@/assets/static/img/css_img/theme-title-02-my.png">
         </div>
       </div>
-    </UiModal>
+
+      <div class="ui-card-sp" style="min-height: 200px;">
+        <div class="el-snow snow-left"></div>
+        <div class="el-snow snow-right"></div>
+
+
+        <div v-if="!$store.state.web3.account" class="tac">
+          {{lg('',{
+            en: 'Please Connect Wallet.',
+            zh: '请链接钱包',
+          })}}
+        </div>
+
+        <div v-else class="list-card">
+          <div 
+            v-for="(item,index) of my_list_card" 
+            :key="index" 
+            class="item-nft tac border"
+            >
+            <cardItem :data="item" @transferItem="showTransferPoppad(item)"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-3 mb-5 pb-4 tac">
+        
+        <button 
+          v-if="my_list_card && my_list_card.length && !status_approve_nft"
+          class="btn btn-primary gold px-5"
+          @click="approveNft()"
+          >
+          {{lg('',{
+            en: 'Approve',
+            zh: '',
+          })}}
+        </button>
+
+        <button 
+          v-if="my_list_card && my_list_card.length && status_approve_nft"
+          class="btn btn-primary gold px-5"
+          @click="clickBtnClaim()"
+          >
+          Claim Rewards
+        </button>
+      </div>
+
+      <UiModal :open="status_pad_transfer" @close="status_pad_transfer = false">
+        <div v-if="item_on_transfer && item_on_transfer.card_id" class="px-5 pb-5">
+          <h3 class="pt-4">Transfer</h3>
+          <div class="tac pt-4" style="height: 200px;">
+            <img :src="require(`../../assets/pic/card/${item_on_transfer.item_post_pic}`)" style="width: 100px;">
+          </div>
+          <div class="mb-3">
+            <label>Amount</label>
+            <input v-model="input_transfer_amount" type="number" step="1" min="1" :max="item_on_transfer.num_my" class="form-control" placeholder="Amount">
+          </div>
+          <div class="mb-3">
+            <label>To Address</label>
+            <input v-model="input_transfer_address" type="text" class="form-control" placeholder="To Address">
+          </div>
+          <div class="mt-5 tac">
+            <button @click="submitTransfer()" class="btn btn-primary gold" style="min-width: 150px;">
+              Transfer
+            </button>
+          </div>
+        </div>
+      </UiModal>
+    </div>
+
+    <!-- bottom bg -->
+    <div class="ui-sp-snow-bg cover-obj_xx"></div>
   </div>
 </template>
 

@@ -34,7 +34,7 @@
               class="d-inline-block d-flex align-items-center"
               >
               {{lg('',{
-                en: 'My Collection',
+                en: 'My NFTs',
                 zh: '',
               })}}
             </router-link>
@@ -111,7 +111,7 @@
                 <button
                   @click="modalOpen = true"
                   :loading="loading"
-                  class="ui-btn outlined w-100__x"
+                  class="ui-btn outlined btn-white"
                 >
                   <Avatar :address="web3.account" size="16" class="mb-none mr-2 ml-n1" />
                   <span v-if="web3.name" v-text="web3.name" />
@@ -124,14 +124,14 @@
             <button
               v-if="web3.injectedLoaded && wrongNetwork"
               @click="modalOpen = true"
-              class="text-red ui-btn outlined"
+              class="ui-btn outlined btn-white"
             >
               <Icon name="warning" class="ml-n1 mr-1 v-align-middle" />
               Wrong network
             </button>
 
             <button
-              class="ui-btn outlined"
+              class="ui-btn outlined btn-white"
               v-if="showLogin"
               @click="modalOpen = true"
               :loading="loading"
@@ -209,23 +209,28 @@ export default {
   @import '@/assets/css/vars.scss';
 
   .topnav-box{
-    background-color: #344A7B;
+    background-color: $c;
     .topnav{
       .main-nav{
 
         a{
-          font-size: 17px;
+          font-size: 18px;
           color: #fff;
-          height: 20px;
-          line-height: 20px;
-          padding: 0 20px; 
+          height: 24px;
+          line-height: 24px;
+          padding: 0 35px; 
 
           &:hover{
-            color: $c !important;
+            color: #fff !important;
           }
 
           &.router-link-exact-active{
             color: $c;
+            background-color: #fff;
+            &:hover{
+              color: $c !important;
+              opacity: 1 !important;
+            }
           }
 
           &:first-child{
@@ -233,8 +238,6 @@ export default {
           &:last-child{
             border-right: none;
           }
-
-          border-right: 1px solid #666;
         }
       }
     }

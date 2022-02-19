@@ -59,11 +59,13 @@ export default {
     -webkit-appearance: none;
     background-color: transparent;
     border-radius: 4px;
-    color: $c;
+    // color: $c;
+    color: #fff;
     padding: 0 15px;
     outline: none;
     text-align: center;
-    border: 1px solid $c;
+    // border: 1px solid $c;
+    border: 1px solid #fff;
     height: 36px;
   }
 </style>
