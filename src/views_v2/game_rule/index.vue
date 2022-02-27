@@ -68,7 +68,7 @@
               <p>
                 {{lg('',{
                   en: '7. There are 5 brand new and different “JGN-AVAX GENESIS COLLECTION – Winter Wonderland” – limited edition, with 140 available for each NFT cards. These cards can be saved in your wallet and will be available for trading in our coming JGN NFT exchange.',
-                  zh: '7、JGN-AVAX的创世NFT收藏版本：一共5种类别，每种类别限量100张。可以收集或者未来在JGN交易所进行交易。',
+                  zh: '7、JGN-AVAX的创世NFT收藏版本：一共5种类别，每种类别限量140张。可以收集或者未来在JGN交易所进行交易。',
                 })}}
               </p>
             </div>
@@ -270,7 +270,7 @@ export default {
           rate: '8.00%',
         },
         {
-          name: 'GN-AVAX GENESIS COLLECTION – Winter Wonderland',
+          name: 'JGN-AVAX GENESIS COLLECTION – Winter Wonderland',
           num: '700',
           rate: '7.00%',
         },
