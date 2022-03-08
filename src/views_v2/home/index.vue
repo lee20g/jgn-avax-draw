@@ -34,8 +34,8 @@
             })}}
             <br>
             {{lg('',{
-              en: 'All JGN used (minus the rewards) in the draw will be burned forever!',
-              zh: '剩余的部分将被永久被销毁！',
+              en: 'All JGN used in the draw will be burned forever!',
+              zh: '所有用于抽奖的JGN都会永久销毁！',
             })}}
           </p>
 
@@ -74,6 +74,18 @@
           >
           Draw
         </button>
+      </div>
+
+      <div class="head-row c">
+         <div class="el-snow snow-left"></div>
+        <div class="el-snow snow-right"></div>
+        <br>
+        <p>
+            {{lg('',{
+              en: 'Please note, all the NFTs are SOLD OUT. Please wait and paricipate in the next one.',
+              zh: '本轮卡牌已经全部被售罄，请不要再抽取。欢迎关注我们下一期的活动',
+            })}}
+        </p>
       </div>
 
       <drawFx :conf="draw_config"/>
